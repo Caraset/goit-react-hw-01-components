@@ -1,0 +1,48 @@
+.profile {
+  margin: 30px auto 0 auto;
+  padding: 10px 20px;
+
+  background-color: #d6d6d6;
+  width: 350px;
+  border: solid 1px #000;
+  border-radius: 15px;
+}
+
+/* .description {
+} */
+
+.avatar {
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* .name {
+} */
+
+/* .tag {
+} */
+
+/* .location {
+} */
+
+.stats {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+}
+
+/* .quantity {
+} */
+
+/* description;
+avatar
+name, tag, location, stats, lavel, quantity */
