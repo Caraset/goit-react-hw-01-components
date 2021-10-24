@@ -1,0 +1,47 @@
+.item {
+  /* margin-top: 20px;
+  margin-left: 20px; */
+
+  /* width: calc(100% / 2 - 32px); */
+
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+  /* background-color: #d6d6d6; */
+}
+
+.item:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.status {
+  margin-right: 10px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.online {
+  composes: status;
+  background-color: green;
+}
+
+.offline {
+  composes: status;
+  background-color: red;
+}
+
+.avatar {
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: 700;
+}

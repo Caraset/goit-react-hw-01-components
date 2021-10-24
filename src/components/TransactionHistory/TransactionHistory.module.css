@@ -1,0 +1,26 @@
+.transactionHistory {
+  margin: 20px auto;
+  background-color: #d6d6d6;
+
+  border: 3px solid #000;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.title {
+  text-align: start;
+  width: 200px;
+  height: 40px;
+  background-color: gray;
+  text-transform: uppercase;
+}
+
+th,
+td {
+  padding: 5px 25px 5px 25px;
+  text-align: left;
+}
+
+td::first-letter {
+  text-transform: uppercase;
+}
