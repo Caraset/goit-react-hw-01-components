@@ -26,7 +26,7 @@ function App() {
       />
       <Statistics title="Stat" stats={stats} />
       <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />;
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
