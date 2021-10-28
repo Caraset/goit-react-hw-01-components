@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import s from "./Statistics.module.css";
+import PropTypes from 'prop-types';
+import s from './Statistics.module.css';
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -10,12 +10,16 @@ function Statistics({ title = null, stats }) {
     <section className={s.statistics}>
       {title && <h2 className={s.title}>{title}</h2>}
       <ul className={s.statList}>
-        {stats.map((el) => {
-          let color = getRandomHexColor();
+        {stats.map(el => {
+          const backgroundColor = getRandomHexColor();
+          const border = `${backgroundColor} 1px solid`;
           return (
             <li
               className={s.item}
-              style={{ backgroundColor: color, border: `${color} 1px solid` }}
+              style={{
+                backgroundColor,
+                border,
+              }}
               key={el.id}
             >
               <span className={s.label}>{el.label} </span>
@@ -35,7 +39,7 @@ Statistics.propTypes = {
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
-    })
+    }),
   ),
 };
 

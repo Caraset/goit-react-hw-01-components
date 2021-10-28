@@ -1,4 +1,4 @@
-import s from "./TransactionHistory.module.css";
+import s from './TransactionHistory.module.css';
 
 function TransactionHistory({ items }) {
   return (
@@ -11,7 +11,7 @@ function TransactionHistory({ items }) {
         </tr>
       </thead>
       <tbody>
-        {items.map((item) => {
+        {items.map(item => {
           return (
             <tr key={item.id}>
               <td>{item.type}</td>
@@ -24,10 +24,5 @@ function TransactionHistory({ items }) {
     </table>
   );
 }
-
-// id — уникальный идентификатор транзакции
-// type — тип транзакции
-// amount - сумма транзакции
-// currency - тип валюты
 
 export default TransactionHistory;

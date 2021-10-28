@@ -1,18 +1,18 @@
 // task 1
-import Profile from "./components/Profile/Profile";
-import user from "./user.json";
+import Profile from './components/Profile/Profile';
+import user from './data//user.json';
 
 // task 2
-import Statistics from "./components/Statistics/Statistics";
-import stats from "./statistical-data.json";
+import Statistics from './components/Statistics/Statistics';
+import stats from './data/statistical-data.json';
 
 // task 3
-import FriendList from "./components/FriendList/FriendList";
-import friends from "./friends.json";
+import FriendList from './components/FriendList/FriendList';
+import friends from './data/friends.json';
 
 // task 4
-import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
-import transactions from "./transactions.json";
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import transactions from './data/transactions.json';
 
 function App() {
   return (

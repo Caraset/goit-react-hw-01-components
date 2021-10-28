@@ -1,10 +1,10 @@
-import FriendListItem from "../FriendListItem/FriendListItem";
-import s from "./FriendList.module.css";
+import FriendListItem from './FriendListItem/FriendListItem';
+import s from './FriendList.module.css';
 
 function FriendList({ friends }) {
   return (
     <ul className={s.friendList}>
-      {friends.map((friend) => {
+      {friends.map(friend => {
         return (
           <FriendListItem
             key={friend.id}
